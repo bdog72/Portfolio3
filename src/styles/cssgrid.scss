@@ -3,13 +3,23 @@ body {
 }
 
 .wrapper {
-  margin: 20px;
+  margin: 30px;
 }
 
 .header {
   grid-area: header;
   border: 5px solid white;
   background-color: #97babf;
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .sidebar {
@@ -17,6 +27,10 @@ body {
   border: 1px solid white;
   background-color: #647c7f;
   color: white;
+
+  p {
+    text-align: center;
+  }
 
   .skills {
     display: flex;
@@ -33,18 +47,30 @@ body {
   border: 1px solid white;
   background-color: #647c7f;
   color: white;
+
+  p {
+    text-align: center;
+  }
 }
 
 .content {
   grid-area: content;
   border: 5px solid white;
   color: white;
+
+  p {
+    text-align: center;
+  }
 }
 
 .footer {
   grid-area: footer;
   border: 5px solid white;
   background-color: #b5dfe5;
+
+  p {
+    text-align: center;
+  }
 }
 
 .wrapper {
