@@ -11,12 +11,20 @@ body {
   border: 5px solid white;
   background-color: #97babf;
 
+  h1 {
+    font-size: 100px;
+  }
   h1,
   p {
     text-align: center;
   }
 
-  .image {
+  p {
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .profilePic {
     display: flex;
     justify-content: center;
   }
@@ -30,15 +38,27 @@ body {
 
   p {
     text-align: center;
+    padding: 10px;
   }
 
-  .skills {
+  .skills1 {
     display: flex;
-    justify-content: space-around;
+  }
+
+  .skills2 {
+    display: flex;
+  }
+
+  .skills3 {
+    display: flex;
   }
 
   ul {
     list-style-type: none;
+  }
+
+  ul li {
+    padding: 30px;
   }
 }
 
@@ -50,6 +70,7 @@ body {
 
   p {
     text-align: center;
+    font-size: 50px;
   }
 }
 
@@ -60,6 +81,24 @@ body {
 
   p {
     text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  .tweet {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .gitHub {
+    display: flex;
+    justify-content: center;
+    // margin-top: 50px;
   }
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../styles/reactrouter.scss'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 export default class ReactRouter extends Component {

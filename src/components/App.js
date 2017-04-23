@@ -28,7 +28,7 @@ export default class App extends Component {
         <div>
           <h1>{this.state.name}</h1>
         </div>
-        <div>
+        <div className='profilePic'>
           <Image src={this.state.imageURL} responsive circle />
         </div>
         <p>{this.state.bio}</p>
@@ -36,29 +36,33 @@ export default class App extends Component {
       </div>
       <div className='box sidebar'>
         <p>Some Of The Skills I Learned At <br /> <img src='https://www.theironyard.com/etc/designs/theironyard/icons/iron-yard-logo.svg' alt='' /></p>
-        <div className='skills'><ul>
+        {/* <div className='skills'> */}
+        <ul className='skills1'>
           <li><Image src='https://cdn1.iconfinder.com/data/icons/line-essentials-64/20/3155-128.png' alt='' responsive /></li>
           <li><Image src='https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_287-128.png' alt='' responsive /></li>
         </ul>
-          <ul>
-            <li><Image src='https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/boostrap-128.png' responsive /></li>
-            <li><Image src='https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-128.png' alt='' responsive /></li>
-          </ul>
-          <ul>
-            <li><Image src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-128.png' alt='' responsive /></li>
-            <li><Image src='https://cdn0.iconfinder.com/data/icons/free_windows7_icons_emoticons/64/clown.png' responsive /></li>
-          </ul></div>
+        <ul className='skills2'>
+          <li><Image src='https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/boostrap-128.png' responsive /></li>
+          <li><Image src='https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-128.png' alt='' responsive /></li>
+        </ul>
+        <ul className='skills3'>
+          <li><Image src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-128.png' alt='' responsive /></li>
+          <li><Image src='https://cdn0.iconfinder.com/data/icons/free_windows7_icons_emoticons/64/clown.png' responsive /></li>
+        </ul>
+        {/* </div> */}
       </div>
       <div className='box sidebar2'>
         <p>React Router</p>
         <ReactRouter />
       </div>
       <div className='box content'>
-        <a href='https://twitter.com/Bdoggy72'>
-          <Image src='https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/twitter-128.png' responsive />
-        </a>
+        <h2>Follow Me On Twitter</h2>
+        <div className='tweet'>
+          <a href='https://twitter.com/Bdoggy72'>
+            <Image src='https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/twitter-128.png' responsive />
+          </a></div>
         <p>My Current GitHub Chart</p>
-        <div>
+        <div className='gitHub'>
           <a href='https://github.com/bdog72'>
             <Image src='http://ghchart.rshah.org/bdog72' alt='Brians GitHub chart' responsive />
           </a>
